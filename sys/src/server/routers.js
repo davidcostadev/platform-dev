@@ -3,7 +3,7 @@ import { Router } from 'express';
 import graphqlHTTP from 'express-graphql';
 import { makeExecutableSchema } from 'graphql-tools';
 import { typeDefs, resolvers } from '../graphql';
-import { ValidateRequest, GetTeamById } from '../Auth';
+import { ValidateRequest } from '../Auth';
 import * as auth from '../Auth';
 
 const router = Router();
